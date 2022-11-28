@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+
+
+{% block title %}
+cart
+{% endblock title %}
+
+
+
+{% block content %}
+
+
+    <h2> {{order.get_cart_total}} </h2>
+    <br>
+    <h2> {{order.get_cart_items}} </h2>
+    <hr>
+{% for item in items %}
+
+   
+
+    <img src="{{item.product.imageURL}}" >
+    <br>
+    <h3> {{item.product.name}} </h3>
+    <br>
+    <p> {{item.product.price}} </p>
+    <br>
+    <p> {{item.quantity}} </p>
+    <br>
+    <p> {{item.get_total}} </p>
+    <hr>
+    
+
+{% endfor %}
+
+
+
+{% endblock content %}

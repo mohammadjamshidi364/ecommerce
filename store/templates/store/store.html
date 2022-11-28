@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+
+{% block title %}
+store
+{% endblock title %}
+
+
+{% block content %}
+
+{% for product in products %}
+
+    <img src="{{product.imgae.imageURL}}" >
+    <br>
+    <h2> {{product.name}} </h2>
+    <br>
+    <p> {{product.price}} </p>
+    <hr>
+
+{% endfor %}
+
+{% endblock content %}
