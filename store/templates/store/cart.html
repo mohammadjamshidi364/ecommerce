@@ -1,5 +1,5 @@
 {% extends 'main.html' %}
-
+{% load static %}
 
 {% block title %}
 cart
@@ -27,9 +27,13 @@ cart
     <p> {{item.quantity}} </p>
     <br>
     <p> {{item.get_total}} </p>
-    <hr>
-    
+    <br>
 
+     <img   data-product="{{item.product.id}}"  data-action="add"  class="update-cart" style="height:20px; width:20px" src="{% static 'images/arrow-up.png' %}" > 
+    <br>
+     <img   data-product="{{item.product.id}}"  data-action="remove" class="update-cart" style="height:20px; width:20px" src="{% static 'images/arrow-down.png' %}" > 
+    
+    <hr>
 {% endfor %}
 
 

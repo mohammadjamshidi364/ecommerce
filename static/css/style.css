@@ -1,0 +1,44 @@
+/* 
+.navbar{
+    background-color: #00ff00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 80px;
+}
+
+.home{
+    border: black solid 1px;
+}
+
+.cart{
+    border: black solid 1px;
+}
+
+.cartItem{
+    border: black solid 1px;
+}
+
+.login-register{
+    border: black solid 1px;
+    
+}
+
+.search{
+    border: black solid 1px;
+    
+} */
+
+.container{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d9dd0d;
+}
+
+.li{
+    float: left;
+}
